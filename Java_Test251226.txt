@@ -1,0 +1,43 @@
+package com.javatest;
+
+public class Test251226 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 컴퓨터는 계산기에요
+		 * + - * , / 
+		 * >> << | &
+		 * function()
+		 * if, for
+		 * 숫자- 사람기준은 10진수
+		 * 컴퓨터기준 - 2진수와 16진수
+		 * 0110  0 과 1로만 표현
+		 * 0~9, A~F 로만 표현   A == 10
+		 * */
+		
+		/*
+		 * 문자열... 이거숫자 아닌데 어떻함?
+		 * 
+		 * 문자열은, 문자열을 전문으로 관리하는 메모리에 
+		 * 문자 하나하나 나란이 올라감
+		 * 각 문자는 id를 내부적으로 가지고 있음
+		 * 
+		 * 예제: str1 메모리는 0x00z1 이라는 메모리 주소를
+		 * 저장하게 되고,
+		 * 0x00z1 이라는 메모리는 
+		 * 0x00z1 = 'a'
+		 * 0x00z2 = 'b'
+		 * 0x00z3 = 'c'
+		 * 이런식으로 저장하게 됨
+		 * 
+		 * 그래서 'a' 라는 문자를 숫자로 강제변환 가능한거임
+		 * */
+		String str1="abc";
+		char char1='a';
+		System.out.println((int)(char1));
+		
+		
+	}
+
+}
