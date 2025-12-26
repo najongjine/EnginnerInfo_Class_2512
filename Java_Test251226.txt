@@ -57,9 +57,16 @@ public class Test251226 {
 		 * 문자열 + 숫자나 나오면
 		 * 이건 문자열 뒤에다가 추가하기
 		 * */
-		System.out.println(str1+num1);
+		//System.out.println(str1+num1);
+		// 수학의 사칙연산 순선수위와 동일. 대입연산은 맨 나중에
+		num1=1+2*2*2;
 		
-		
+		num1=0;
+		num1=num1+1; // num1+=1;
+		num1=0;
+		num1=5*(2+3);
+		num1=3;
+		System.out.println(num1 % 2); // mod 연산. 나머지 연산
 	}
 
 }
