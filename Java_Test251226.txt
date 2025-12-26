@@ -32,10 +32,32 @@ public class Test251226 {
 		 * 이런식으로 저장하게 됨
 		 * 
 		 * 그래서 'a' 라는 문자를 숫자로 강제변환 가능한거임
+		 * 
+		 * java 와 파이썬은 포인터 기능이 없음.
+		 * 그래서 str1 = 0x00z1 이런 메모리 주소 값을 만나게 되면
+		 * 강제로 원산지로 찾아감
 		 * */
 		String str1="abc";
 		char char1='a';
-		System.out.println((int)(char1));
+		//System.out.println((int)(char1));
+		
+		int num1=1;
+		num1=2;
+		int num2=3;
+		/*
+		 * 변수를 호출하면, 자동으로 걔가 저장하고 있는 값을 꺼내와요
+		 * 그래서 num1주소 + num2주소 이게 아니라,
+		 * num1이 가지고 있는값 꺼내고, num2가 가지고 있는값 꺼내서
+		 * 더한후, num3에 저장하라 그뜻이에요
+		 * */
+		int num3=num1+num2;
+		
+		
+		/*
+		 * 문자열 + 숫자나 나오면
+		 * 이건 문자열 뒤에다가 추가하기
+		 * */
+		System.out.println(str1+num1);
 		
 		
 	}
