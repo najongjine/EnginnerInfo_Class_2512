@@ -10,13 +10,23 @@ class FishBreadRecipe{
 public class Java260102 {
 
 	public static void main(String[] args) {
-		// class
+		/*
+		 * 자바는 포인터가 기호가 없지만, 포인터 원리가 없다는 뜻이 아니에요
+		 * new 클래스명() 이렇게 하면 heap 메모리 영역에 데이터를 만들고,
+		 * 그 데이터가 있는 주소를 fishBread 에 다가 저장한다
+		 * */
 		FishBreadRecipe fishBread=new FishBreadRecipe();
 		FishBreadRecipe fishBread2=new FishBreadRecipe();
 		FishBreadRecipe fishBread3=fishBread;
-		System.out.println("fishBread : "+fishBread);
-		System.out.println("fishBread2 : "+fishBread2);
-		System.out.println("fishBread3 : "+fishBread3);
+		if(fishBread==fishBread2) {
+			System.out.println("fishBread 와 fishBread2 는 주소가 같아요");
+		}
+		if(fishBread==fishBread3) {
+			System.out.println("fishBread 와 fishBread3 는 주소가 같아요");
+		}
+		if(fishBread2==fishBread3) {
+			System.out.println("fishBread2 와 fishBread3 는 주소가 같아요");
+		}
 	}
 
 }
