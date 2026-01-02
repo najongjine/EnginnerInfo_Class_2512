@@ -2,6 +2,7 @@ package com.javatest;
 
 
 class FishBreadRecipe{
+	// 속성, attribute
 	int sweetBean=10;
 	int flour=20;
 }
@@ -11,7 +12,11 @@ public class Java260102 {
 	public static void main(String[] args) {
 		// class
 		FishBreadRecipe fishBread=new FishBreadRecipe();
-		System.out.println(fishBread);
+		FishBreadRecipe fishBread2=new FishBreadRecipe();
+		FishBreadRecipe fishBread3=fishBread;
+		System.out.println("fishBread : "+fishBread);
+		System.out.println("fishBread2 : "+fishBread2);
+		System.out.println("fishBread3 : "+fishBread3);
 	}
 
 }
