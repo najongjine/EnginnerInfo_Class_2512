@@ -27,6 +27,13 @@ public class Java260102 {
 		if(fishBread2==fishBread3) {
 			System.out.println("fishBread2 와 fishBread3 는 주소가 같아요");
 		}
+		
+		/*
+		 * 타입이 소문자다(int, boolean) - 그냥 값 복붙해옴
+		 * 타입이 대문자다(Class A) - 주소 개념이다
+		 * */
+		
+		
 	}
 
 }
