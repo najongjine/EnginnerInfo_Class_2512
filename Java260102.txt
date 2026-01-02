@@ -31,8 +31,13 @@ public class Java260102 {
 		/*
 		 * 타입이 소문자다(int, boolean) - 그냥 값 복붙해옴
 		 * 타입이 대문자다(Class A) - 주소 개념이다
+		 * int a == int b 그냥 값 비교함 simple
+		 * class A == class B  주소 비교함. 속사정이 복잡함
+		 * 하지만 String 이 나온다면... 좀... 구렁이 담 넘어가듯 비리좀 저지르자
+		 * String은 깐깐하게 하지말고 그냥 값 보여줘
 		 * */
-		
+		String str1="abc";
+		System.out.println("str1 : "+str1);
 		
 	}
 
