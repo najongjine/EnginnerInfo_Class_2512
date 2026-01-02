@@ -37,7 +37,11 @@ public class Java260102 {
 		 * String은 깐깐하게 하지말고 그냥 값 보여줘
 		 * */
 		String str1="abc";
-		System.out.println("str1 : "+str1);
+		String str2="abc";
+		String str3=new String("abc");
+		System.out.println(System.identityHashCode(str1)); // 예: 123456
+		System.out.println(System.identityHashCode(str2)); // 예: 123456 (str1과 같음!)
+		System.out.println(System.identityHashCode(str3)); // 예: 789012 (str1과 다름!)
 		
 	}
 
