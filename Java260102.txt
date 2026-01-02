@@ -1,0 +1,17 @@
+package com.javatest;
+
+
+class FishBreadRecipe{
+	int sweetBean=10;
+	int flour=20;
+}
+
+public class Java260102 {
+
+	public static void main(String[] args) {
+		// class
+		FishBreadRecipe fishBread=new FishBreadRecipe();
+		System.out.println(fishBread);
+	}
+
+}
