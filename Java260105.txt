@@ -11,15 +11,41 @@ class Bread{
 	int 가격사기치기() {
 		return price*10;
 	}
+	
+	/* String, float, boolean, int, char 얘네들  
+	 * 값 복붙으로 전달되요.
+	 * 원본은 손상 안가요
+	 * */
+	void 원자재사기치기(String mat) {
+		flourKind=mat;
+		mat="밀당성공";
+	}
+	void 가격사기치기2(int _price) {
+		price=_price;
+		_price=9999999;
+	}
+	
+	/*
+	 * call by refrence. 
+	 * 주소를 넘겨줘서, 원본이 손상감
+	 * */
+	void 빵에장난치기(Bread _bread) {
+		_bread.flourKind="흙";
+	}
+	Bread 빵에장난치기2(Bread _bread) {
+		_bread.flourKind="흙";
+		return _bread;
+	}
 }
 
 public class Java260105 {
 
 	public static void main(String[] args) {
 		Bread bread = new Bread();
-		// method. 함수
-		System.out.println(bread.가격사기치기());
-
+		Bread bread2 = new Bread();
+		bread.빵에장난치기(bread2);
+		System.out.println("bread1 : "+bread.flourKind);
+		System.out.println("bread2 : "+bread2.flourKind);
 	}
 
 }
