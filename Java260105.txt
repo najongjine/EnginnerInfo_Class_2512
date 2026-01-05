@@ -8,12 +8,17 @@ class Bread{
 		System.out.println(" 밀가루 종류: "+flourKind);
 		System.out.println(" 가격: "+price);
 	}
+	int 가격사기치기() {
+		return price*10;
+	}
 }
 
 public class Java260105 {
 
 	public static void main(String[] args) {
+		Bread bread = new Bread();
 		// method. 함수
+		System.out.println(bread.가격사기치기());
 
 	}
 
