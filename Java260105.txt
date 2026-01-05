@@ -1,0 +1,20 @@
+package com.javatest;
+
+class Bread{
+	String flourKind="밀가루";
+	int price=500;
+	
+	void showBread() {
+		System.out.println(" 밀가루 종류: "+flourKind);
+		System.out.println(" 가격: "+price);
+	}
+}
+
+public class Java260105 {
+
+	public static void main(String[] args) {
+		// method. 함수
+
+	}
+
+}
