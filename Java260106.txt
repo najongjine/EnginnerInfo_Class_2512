@@ -1,0 +1,69 @@
+package com.javatest;
+
+
+
+public class Java260106 {
+
+	public static void main(String[] args) {
+		// float 소수점.
+		int a=1; // 4byte. 정확도를 위해서 나옴
+		float f1=1.1f; // 4 byte. 범위를 위해서 나옴
+		int c=a+(int)f1; // 1.1 -> 1
+		
+		
+		/*
+		 * 옛날언어 특징이 int랑 float을 나눴어요.
+		 * 옛날 컴퓨터는 성능이 코딱지 만해서 좀 이해할수 없는 최적하를 넣었어요
+		 * 
+		 * 정수/정수 를 나누면, 지가 내부적으로 최적하 멋대로 해서
+		 * 답도 int(소수점 버리기 들어가요)
+		 * 정수/소수점, 소수점/정수, 소수점/소수점 이렇게 하나라도 소수점 들어가면
+		 * 우리가 아는 평범한 소수점 나누기 해요
+		 * */
+		float num1=1/3;
+		
+		/* 반복문 */
+		a=1;
+		while(a>0) {
+			a--;
+		}
+		a=1;
+		do {
+			System.out.println("실행 될까?");
+			--a;
+		}while(a>0);
+		
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<2;j++) {
+				if((i+j) % 2 == 0) {
+					System.out.println(i+j);
+				}
+			}
+		}
+		
+		
+		
+		Bread0106 bread=new Bread0106();
+		System.out.println(bread.flourkind);
+		System.out.println(bread.price);
+		
+	}
+
+}
+
+class Bread0106{
+	String flourkind="밀가루";
+	int price=500;
+	
+	Bread0106(){
+		price=100;
+	}
+	/* method overloading. 함수 이름은 똑같은게 있는데, 매개변수
+	 * 타입이랑 갯수가 틀리다고 ok 해줌*/
+	Bread0106(int price){
+		this.price=price;
+	}
+	Bread0106(int price, String flourkind){
+		this.price=price;
+	}
+}
