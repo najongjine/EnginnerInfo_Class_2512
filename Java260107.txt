@@ -1,0 +1,23 @@
+package com.javatest;
+
+class Bread260107{
+	String flourkind="밀가루";
+	int flourgram=10;
+	Bread260107(){
+		System.out.println("빵 클래스");
+	}
+}
+class FishBread260107 extends Bread260107{
+	
+}
+
+public class Java260107 {
+
+	public static void main(String[] args) {
+		// 상속
+		FishBread260107 fishbread= new FishBread260107();
+		
+
+	}
+
+}
