@@ -3,13 +3,19 @@ package com.javatest;
 class Bread260107{
 	String flourkind="밀가루";
 	int flourgram=10;
-	Bread260107(){
+	
+	Bread260107(String flourkind){
 		System.out.println("빵 클래스");
 	}
 }
 class FishBread260107 extends Bread260107{
 	FishBread260107(){
+		super("흑가루");
 		System.out.println("붕어빵 클래스");
+	}
+	FishBread260107(String flourkind){
+		super(flourkind);
+		this.flourkind=flourkind;
 	}
 }
 
@@ -22,10 +28,19 @@ public class Java260107 {
 		 * 부모가 먼저 생성되어야, 자식이 생성될수 있음
 		 * 클래스이름() 이걸 기본 생성자라고 함. 클래스가 만들어질때 무조건
 		 * 호출함.
-		 * 생성자를 단 한개로 안만들었다? 지가 내용물 없는 껍데기 생성자를
-		 * 컴팡일 단계에서 만듬.
+		 * 상속 상태에서, 부모에 생성자를 단 한개로 안만들었다? 지가 내용물 없는 껍데기 생성자를
+		 * 컴파일 단계에서 만듬.
+		 * 
+		 * 부모에 클래스이름() 이런 기본 생성자 만들어줬다? no problem. 그거 갔다 
+		 * 쓰면 됨
+		 * 
+		 * 부모에 클래스이름(매개변수) 이런 생성자는 있지만, 기본 생성자가 없다?
+		 * 난리 난다
+		 * 해결 방법은, 부모에 기본 생성자도 만들어 주던가, 아니면
+		 * 자식 클래스 생성자에서 부모 생성자를 강제로 호출 시켜야 한다
 		 * */
-		FishBread260107 fishbread= new FishBread260107();
+		FishBread260107 fishbread= 
+				new FishBread260107("허니가루");
 		
 
 	}
