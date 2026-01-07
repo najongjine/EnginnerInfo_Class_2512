@@ -8,13 +8,23 @@ class Bread260107{
 	}
 }
 class FishBread260107 extends Bread260107{
-	
+	FishBread260107(){
+		System.out.println("붕어빵 클래스");
+	}
 }
 
 public class Java260107 {
 
 	public static void main(String[] args) {
 		// 상속
+		/*
+		 * 프로그래밍 세계에선 자식은 부모꺼 다 물려받음
+		 * 부모가 먼저 생성되어야, 자식이 생성될수 있음
+		 * 클래스이름() 이걸 기본 생성자라고 함. 클래스가 만들어질때 무조건
+		 * 호출함.
+		 * 생성자를 단 한개로 안만들었다? 지가 내용물 없는 껍데기 생성자를
+		 * 컴팡일 단계에서 만듬.
+		 * */
 		FishBread260107 fishbread= new FishBread260107();
 		
 
