@@ -1,14 +1,27 @@
 package com.javatest;
 
-class Bread260107{
+abstract class Shape {
+	int a=1;
+	abstract void draw();
+}
+
+class Bread260107 extends Shape{
 	String flourkind="밀가루";
 	int flourgram=10;
 	
 	Bread260107(String flourkind){
 		System.out.println("빵 클래스");
 	}
+
+	
+	void draw() {
+		System.out.println("빵모양");
+		
+	}
 }
+                                                                
 class FishBread260107 extends Bread260107{
+	String flourkind="허니밀가루";
 	FishBread260107(){
 		super("흑가루");
 		System.out.println("붕어빵 클래스");
@@ -16,6 +29,10 @@ class FishBread260107 extends Bread260107{
 	FishBread260107(String flourkind){
 		super(flourkind);
 		this.flourkind=flourkind;
+		super.flourkind="";
+	}
+	public void draw() {
+		System.out.println("붕어빵모양");
 	}
 }
 
@@ -38,9 +55,17 @@ public class Java260107 {
 		 * 난리 난다
 		 * 해결 방법은, 부모에 기본 생성자도 만들어 주던가, 아니면
 		 * 자식 클래스 생성자에서 부모 생성자를 강제로 호출 시켜야 한다
+		 * 
+		 * abstract(추상) class 는 미완성 클래스.
+		 * 속성은 상관 없지만, method 는 껍데기만 정의할수 있어요.
+		 * abstract 클래스를 사용하고 싶으면, 무조건 상속을 해야해요.
+		 * 속성은 그냥 물려 주지만, 만약 method가 abstract class
+		 * 에 정의됬다면, 자식 클래스에서 무조건 내용물 채워 줘야해요 
 		 * */
 		FishBread260107 fishbread= 
 				new FishBread260107("허니가루");
+		fishbread.draw();
+		fishbread.a=1;
 		
 
 	}
