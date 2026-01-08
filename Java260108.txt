@@ -1,12 +1,13 @@
 package com.javatest;
 //Bread260108 fishbread =new FishBread260108("꿀가루");
 class Bread260108{
-	int a=1;
+	int count=1;
 	void Show() {
 		System.out.println("빵이에요");
 	}
-	void aaa() {
-		System.out.println("aaa");
+	void ShowCount() {
+		System.out.println(count);
+		
 	}
 	
 }
@@ -21,6 +22,8 @@ class FishBread260108 extends Bread260108{
 	
 	void Show() {
 		System.out.println("붕어빵 이에요");
+		ShowCount();
+		System.out.println(flourkind);
 	}
 	void bbb() {
 		System.out.println("bbb");
@@ -37,7 +40,6 @@ public class Java260108 {
 		 * method는 override 따라가요
 		 * */
 		Bread260108 fishbread =new FishBread260108("꿀가루");
-
 	}
 
 }
