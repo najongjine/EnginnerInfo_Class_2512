@@ -1,7 +1,11 @@
 package com.javatest;
+
+import java.util.ArrayList;
+import java.util.List;
+
 //Bread260108 fishbread =new FishBread260108("꿀가루");
 class Bread260108{
-	int count=1;
+	public int count=1;
 	void Show() {
 		System.out.println("빵이에요");
 	}
@@ -12,6 +16,7 @@ class Bread260108{
 	
 }
 class FishBread260108 extends Bread260108{
+	
 	String flourkind;
 	FishBread260108(){
 		this.flourkind="밀가루";
@@ -30,6 +35,23 @@ class FishBread260108 extends Bread260108{
 	}
 }
 
+class Animal260108{
+	 void makeSound() {
+		 System.out.println("으르렁");
+	 }
+}
+class Dog260108 extends Animal260108{
+	void makeSound() {
+		 System.out.println("멍멍");
+	 }
+}
+class Cat260108 extends Animal260108{
+	void makeSound() {
+		 System.out.println("야옹");
+	 }
+}
+
+
 public class Java260108 {
 
 	public static void main(String[] args) {
@@ -39,7 +61,13 @@ public class Java260108 {
 		 * 속성은(변수)는 타입 따라가고,
 		 * method는 override 따라가요
 		 * */
+		List<Bread260108> list1=new ArrayList<Bread260108>();
 		Bread260108 fishbread =new FishBread260108("꿀가루");
+		Bread260108 fishbread2 =new FishBread260108("흑가루");
+		list1.add(fishbread);
+		list1.add(fishbread2);
+		list1.get(0).count=10;
+		System.out.println(fishbread.count);
 	}
 
 }
