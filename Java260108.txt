@@ -69,6 +69,17 @@ public class Java260108 {
 		list1.get(0).count=10;
 		
 		
+		/*
+		 * 타입은 부모로 두고, new 는 자식으로 하는걸 다형성 이라고 말해요.
+		 * 이걸 쓰는 이유는
+		 * 옛날 언어는 꾸졌어요.
+		 * 그래서 어떻게 해야 코드를 수정을 적게 할까 고민하다가 처넣은 기능이에요
+		 * 
+		 * 이렇게 하면 list 를 부모 타입으로 두고, new만 자식으로 해서
+		 * 여러종류를 넣을수 있고,
+		 * 사용할때는 method 이름이 똑같아서 사용법이 같아요.
+		 * 함수안에 내용물은 틀리니, 사용방법을 같고, 기능은 다르게 하게 되요
+		 * */
 		List<Animal260108> animals=new ArrayList<Animal260108>();
 		Animal260108 dog=new Dog260108();
 		Animal260108 cat=new Cat260108();
@@ -80,6 +91,7 @@ public class Java260108 {
 		for(Animal260108 e:animals) {
 			e.makeSound();
 		}
+		
 		
 	}
 
