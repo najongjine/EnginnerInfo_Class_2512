@@ -1,0 +1,29 @@
+package com.javatest;
+
+class Bread260108{
+	
+}
+class FishBread260108 extends Bread260108{
+	String flourkind;
+	FishBread260108(){
+		this.flourkind="밀가루";
+	}
+	FishBread260108(String flourkind){
+		this.flourkind=flourkind;
+	}
+	
+	void Show() {
+		System.out.println("붕어빵 이에요");
+	}
+}
+
+public class Java260108 {
+
+	public static void main(String[] args) {
+		// override
+		Bread260108 fishbread =new FishBread260108("꿀가루");
+		
+
+	}
+
+}
