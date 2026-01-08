@@ -1,6 +1,13 @@
 package com.javatest;
-
+//Bread260108 fishbread =new FishBread260108("꿀가루");
 class Bread260108{
+	int a=1;
+	void Show() {
+		System.out.println("빵이에요");
+	}
+	void aaa() {
+		System.out.println("aaa");
+	}
 	
 }
 class FishBread260108 extends Bread260108{
@@ -15,14 +22,21 @@ class FishBread260108 extends Bread260108{
 	void Show() {
 		System.out.println("붕어빵 이에요");
 	}
+	void bbb() {
+		System.out.println("bbb");
+	}
 }
 
 public class Java260108 {
 
 	public static void main(String[] args) {
 		// override
+		/* 업케스팅
+		 * 타입은 부모, new 는 자식.
+		 * 속성은(변수)는 타입 따라가고,
+		 * method는 override 따라가요
+		 * */
 		Bread260108 fishbread =new FishBread260108("꿀가루");
-		
 
 	}
 
