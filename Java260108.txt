@@ -67,7 +67,20 @@ public class Java260108 {
 		list1.add(fishbread);
 		list1.add(fishbread2);
 		list1.get(0).count=10;
-		System.out.println(fishbread.count);
+		
+		
+		List<Animal260108> animals=new ArrayList<Animal260108>();
+		Animal260108 dog=new Dog260108();
+		Animal260108 cat=new Cat260108();
+		Animal260108 animal=new Animal260108();
+		animals.add(animal);
+		animals.add(dog);
+		animals.add(cat);
+		
+		for(Animal260108 e:animals) {
+			e.makeSound();
+		}
+		
 	}
 
 }
