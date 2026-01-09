@@ -10,12 +10,7 @@ interface Attack260109{
 	public int damage=10;
 	public void attack();
 }
-class Test260109{
-	
-}
-class Test260109_2{
-	
-}
+
 class Animal260109 implements Move260109, Attack260109{
 	static boolean mouth=true;
 	
@@ -82,7 +77,6 @@ public class Java260109 {
 		//Attack260109 dog4=new Dog260109();
 		//dog4.attack();
 		
-		System.out.println(Move260109.hp);
 		
 		
 	}
