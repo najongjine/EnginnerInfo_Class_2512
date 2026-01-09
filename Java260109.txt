@@ -25,20 +25,25 @@ class Animal260109 extends Test260109
 	}
 	@Override
 	public void attack() {
-		// TODO Auto-generated method stub
+		System.out.println("animal 몸통 박치기");
 		
 	}
 	@Override
 	public void move() {
-		// TODO Auto-generated method stub
+		System.out.println("animal 몸 흔들기");
 		
 	}
+}
+
+class Dog260109 extends Animal260109{
+	
 }
 
 public class Java260109 {
 
 	public static void main(String[] args) {
-		// interface static
+		Move260109 a = new Animal260109();
+		Attack260109 a2 = new Animal260109();
 
 	}
 
