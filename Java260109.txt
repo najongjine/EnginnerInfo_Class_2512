@@ -14,11 +14,11 @@ class Test260109{
 class Test260109_2{
 	
 }
-class Animal260109 extends Test260109
-                   implements Move260109, Attack260109{
+class Animal260109 implements Move260109, Attack260109{
 	int weight=10;
 	Animal260109(){
 		System.out.println("난 animal");
+	
 	}
 	public void show() {
 		System.out.println("animal 으르렁");
@@ -36,7 +36,22 @@ class Animal260109 extends Test260109
 }
 
 class Dog260109 extends Animal260109{
-	
+	Dog260109(){
+		System.out.println("난 dog");
+	}
+	public void show() {
+		System.out.println("animal 으르렁");
+	}
+	@Override
+	public void attack() {
+		System.out.println("animal 몸통 박치기");
+		
+	}
+	@Override
+	public void move() {
+		System.out.println("animal 몸 흔들기");
+		
+	}
 }
 
 public class Java260109 {
