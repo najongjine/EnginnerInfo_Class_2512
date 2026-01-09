@@ -1,0 +1,45 @@
+package com.javatest;
+
+interface Move260109{
+	public int hp=10;
+	public void move();
+}
+interface Attack260109{
+	public int damage=10;
+	public void attack();
+}
+class Test260109{
+	
+}
+class Test260109_2{
+	
+}
+class Animal260109 extends Test260109
+                   implements Move260109, Attack260109{
+	int weight=10;
+	Animal260109(){
+		System.out.println("난 animal");
+	}
+	public void show() {
+		System.out.println("animal 으르렁");
+	}
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+public class Java260109 {
+
+	public static void main(String[] args) {
+		// interface static
+
+	}
+
+}
