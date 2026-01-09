@@ -36,20 +36,22 @@ class Animal260109 implements Move260109, Attack260109{
 }
 
 class Dog260109 extends Animal260109{
+	int legs=4;
+	boolean fur=true;
 	Dog260109(){
 		System.out.println("난 dog");
 	}
 	public void show() {
-		System.out.println("animal 으르렁");
+		System.out.println("dog 명명");
 	}
 	@Override
 	public void attack() {
-		System.out.println("animal 몸통 박치기");
+		System.out.println("dog 물어뜯기");
 		
 	}
 	@Override
 	public void move() {
-		System.out.println("animal 몸 흔들기");
+		System.out.println("dog 달리기");
 		
 	}
 }
@@ -57,9 +59,17 @@ class Dog260109 extends Animal260109{
 public class Java260109 {
 
 	public static void main(String[] args) {
-		Move260109 a = new Animal260109();
-		Attack260109 a2 = new Animal260109();
-
+		Animal260109 animal=new Animal260109();
+		animal.show();
+		animal.attack();
+		animal.move();
+		
+		Dog260109 dog=new Dog260109();
+		dog.show();
+		dog.move();
+		dog.attack();
+		
+		
 	}
 
 }
