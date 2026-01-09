@@ -1,6 +1,8 @@
 package com.javatest;
 
 interface Move260109{
+	/* interface에 선언된 속성은 지가 컴파일때 자동으로 
+	 * static final 으로 바꾼대요 */
 	public int hp=10;
 	public void move();
 }
@@ -15,6 +17,8 @@ class Test260109_2{
 	
 }
 class Animal260109 implements Move260109, Attack260109{
+	static boolean mouth=true;
+	
 	int weight=10;
 	Animal260109(){
 		System.out.println("난 animal");
@@ -32,6 +36,10 @@ class Animal260109 implements Move260109, Attack260109{
 	public void move() {
 		System.out.println("animal 몸 흔들기");
 		
+	}
+	
+	public static void 여자친구찾기() {
+		System.out.println("여친 구함");
 	}
 }
 
@@ -59,15 +67,22 @@ class Dog260109 extends Animal260109{
 public class Java260109 {
 
 	public static void main(String[] args) {
-		Animal260109 animal=new Animal260109();
-		animal.show();
-		animal.attack();
-		animal.move();
+		//Animal260109 animal=new Animal260109();
+
 		
-		Dog260109 dog=new Dog260109();
-		dog.show();
-		dog.move();
-		dog.attack();
+		//Dog260109 dog=new Dog260109();
+		
+		//Animal260109 dog2=new Dog260109();
+		//dog2.attack();
+		//dog2.show();
+		
+		//Move260109 dog3=new Dog260109();
+		//dog3.move();
+		
+		//Attack260109 dog4=new Dog260109();
+		//dog4.attack();
+		
+		System.out.println(Move260109.hp);
 		
 		
 	}
